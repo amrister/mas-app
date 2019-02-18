@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto"
+}
+.header{
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+}
+.header h1{
+  padding-top: 25vh;
+  margin: 0 0 80px;
+  font-size: 45px;
+}
+.search{
+  width: 50%;
+  margin:auto;
+}
+.search select{
+  width: 70%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.search input[type="submit"]{
+  width: 15%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 0;
+  background-color: #12AAA7;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}

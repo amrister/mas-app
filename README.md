@@ -1,2 +1,0 @@
-# mas-app
-MAS App
