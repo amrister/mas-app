@@ -1,8 +1,16 @@
+* {
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 0;
-  font-family: "Roboto"
+  font-family: "Roboto";
+  height: 5000px;
 }
+.text-center{
+  text-align: center;
+}
+/* ---------------------------- Start HOme ------------------------------*/
 .header{
   background-color: #333;
   text-align: center;
@@ -34,3 +42,45 @@ body{
   font-weight: bold;
   cursor: pointer;
 }
+/*------------------------------- End Home -------------------------------*/
+/*------------------------------- Start Result -------------------------------*/
+.results >div:first-of-type h1{
+  background-color: #333;
+  margin: 0;
+  padding: 40px 0;
+  color: #fff;
+}
+.results h1{
+  letter-spacing: 1px;
+}
+.results .images{
+  display: flex;
+}
+.results .images .image{
+  width: 33.33333%;
+  background-color: #525;
+  border: 1px solid #333;
+  flex-shrink: 0;;
+  height: 290px;
+}
+.results .weather{
+  padding-top: 80px;
+  color: #333;
+}
+.results .weather .details ul{
+  list-style-type: none;
+  width: 40%;
+  float: left;
+}
+.results .weather .details ul:first-of-type{
+  list-style-type: none;
+  width: 40%;
+  float: left;
+  margin-left: 20%;
+}
+.results .weather .details ul li{
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+/*------------------------------- End Results -------------------------------*/
