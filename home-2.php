@@ -26,7 +26,16 @@
   $daily_pres= $wthr_array['daily']['data'][0]['pressure'];
   $daily_wind= $wthr_array['daily']['data'][0]['windSpeed'];
 
+
+  // Using Pixabay Search api to get images
+  $bing_url = 'https://pixabay.com/api/?key=11682728-98400bd9005497a9e33a2a0ca&q='.urlencode($location).'&image_type=photo';
+  $bing_json = file_get_contents($bing_url);
+  $bing_array = json_decode($bing_json, true);
+  $i=0;
   $images = array();
+  foreach ($bing_array['hits'] as $image) {
+    $images[$i++]=$image['largeImageURL'];
+  }
 
 ?>
 <!DOCTYPE html>
